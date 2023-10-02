@@ -20,6 +20,125 @@ a {
   margin: 0 auto;
 }
 
+/* primary */
+
+.primary-content {
+  background-color: #c1cbd7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wrapper-primary-text {
+  width: 50%;
+}
+
+.primary__main-img {
+  width: 40%;
+  height: 100%;
+  border-radius:70%;
+  border-color:#b4c2d2;
+  border-style: dashed;
+}
+
+.section__title {
+  font-family: "Philosopher";
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.primary__title {
+  font-size: 55px;
+  margin-bottom: 20px;
+  animation: typewriter 4s steps(23) infinite, blink 0.5s steps(23) infinite;
+}
+
+.primary__title > span {
+  color: white;
+  font-size: 60px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+
+.primary__text {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.link-button {
+  display: inline-block;
+  letter-spacing: 2px;
+  background-color: #000;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.link-button:hover {
+  background-color:#6bacc6;;
+  transition: all 0.2s;
+}
+
+.primary__link-button {
+  margin-bottom: 40px;
+}
+
+.primary__social {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .primary-content {
+    padding-bottom: 0;
+  }
+
+  .wrapper-primary-text {
+    width: 50%;
+    padding-bottom: 80px;
+  }
+
+  .primary__main-img {
+    width: 40%;
+
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .primary-content {
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 70px;
+  }
+  .wrapper-primary-text {
+    width: 90%;
+  }
+
+  .primary__title {
+    font-size: 48px;
+  }
+
+  .primary__social {
+    display: none;
+  }
+
+  .primary__main-img {
+    width: 80%;
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .wrapper-content {
     max-width: auto;
@@ -29,12 +148,12 @@ a {
 header,
 .section-primary,
 footer {
-  background-color: #fff5da;
+  background-color: #c1cbd7;
 }
 
 .header-content {
   width: 100%;
-  background-color: #fff5da;
+  background-color: #c1cbd7;
   height: 70px;
   padding-left: 30px;
   padding-right: 30px;
@@ -262,7 +381,7 @@ footer {
   }
 
   .primary__main-img {
-    width: 80%;
+    width: 50%;
     align-self: center;
   }
 }
@@ -270,8 +389,7 @@ footer {
 /* about me */
 
 .secondary-content {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,23 +452,23 @@ footer {
   .about__title {
     font-size: 20px;
   }
-  .wrapper-about {
-    margin-bottom: 50px;
-  }
+  
 }
 
-
+.wrapper-about {
+    margin-bottom: 50px;
+  }
 
 
 
 /* footer */
 
-footer {
+/* footer {
   margin-top: 100px;
-}
+} */
 
 .footer-content {
-  background-color: #fff5da;
+  background-color: #c1cbd7;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -410,4 +528,8 @@ footer nav {
   .footer-nav-list {
     margin-top: 30px;
   }
+}
+
+.section-more{
+  background-color: #f4f4f4;
 }
